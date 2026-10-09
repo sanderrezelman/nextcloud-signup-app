@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07385a">
+  <meta name="description" content="Maak eenvoudig uw zakelijke Nextcloud-werkplek aan.">
+  <title>Nextcloud Werkplek — Start veilig in de cloud</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Hoofdnavigatie">
+      <a class="brand" href="#top" aria-label="Nextcloud Werkplek startpagina"><span class="brand-icon">☁</span><span>Nextcloud <b>Werkplek</b></span></a>
+      <a class="nav-help" href="mailto:support@example.nl">Hulp nodig? Neem contact op <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-glow hero-glow-one"></div><div class="hero-glow hero-glow-two"></div>
+      <div class="hero-layout wrap">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="status-dot"></span> Uw veilige digitale werkplek</div>
+          <h1>Uw werk. Uw bestanden.<br><span>Uw cloud.</span></h1>
+          <p class="hero-lede">Werk slimmer samen met een eigen Nextcloud-werkplek. Meld u eenvoudig aan en wij richten uw account automatisch voor u in.</p>
+          <ul class="hero-checks"><li>Automatische accountaanmaak</li><li>Bestanden altijd bij de hand</li><li>Persoonlijke ondersteuning</li></ul>
+          <div class="trust-note"><span class="trust-icon">✳</span><span>Gemaakt voor bedrijven die controle willen houden over hun data.</span></div>
+        </div>
+
+        <section class="signup-card" id="aanmelden" aria-labelledby="form-title">
+          <div class="card-heading"><div><p class="kicker">AANMELDEN</p><h2 id="form-title">Start uw account</h2><p class="muted">In een paar stappen geregeld.</p></div><div class="secure-mark" aria-label="Beveiligde registratie">⌑</div></div>
+          <div class="progress-track" aria-label="Voortgang"><div class="progress-step is-active" data-progress="1"><span>1</span><small>Uw gegevens</small></div><i></i><div class="progress-step" data-progress="2"><span>2</span><small>Uw account</small></div><i></i><div class="progress-step" data-progress="3"><span>3</span><small>Bevestiging</small></div></div>
+          <form id="signup-form" novalidate>
+            <section class="form-panel is-visible" data-panel="1" aria-labelledby="details-heading">
+              <h3 id="details-heading">Vertel ons over uzelf</h3><p class="panel-intro">Deze gegevens gebruiken we voor uw klantregistratie.</p>
+              <div class="field-grid">
+                <div class="field"><label for="firstName">Voornaam <em>*</em></label><input id="firstName" name="firstName" autocomplete="given-name" required maxlength="100" placeholder="Jan"></div>
+                <div class="field"><label for="lastName">Achternaam <em>*</em></label><input id="lastName" name="lastName" autocomplete="family-name" required maxlength="100" placeholder="Jansen"></div>
+              </div>
+              <div class="field"><label for="company">Bedrijfsnaam <em>*</em></label><input id="company" name="company" autocomplete="organization" required maxlength="160" placeholder="Uw bedrijfsnaam"></div>
+              <div class="field-grid field-grid-address">
+                <div class="field"><label for="postalCode">Postcode <em>*</em></label><input id="postalCode" name="postalCode" autocomplete="postal-code" required maxlength="20" placeholder="1234 AB"></div>
+                <div class="field"><label for="houseNumber">Huisnummer <em>*</em></label><input id="houseNumber" name="houseNumber" required maxlength="20" placeholder="12A"></div>
+              </div>
+              <div class="field"><label for="address">Straat en plaats <em>*</em></label><input id="address" name="address" autocomplete="street-address" required maxlength="200" placeholder="Dorpsstraat 12, Utrecht"></div>
+              <div class="field"><label for="phone">Telefoonnummer <span class="optional">optioneel</span></label><input id="phone" name="phone" type="tel" autocomplete="tel" maxlength="40" placeholder="06 12345678"></div>
+              <div class="privacy-callout"><span>♧</span><p><b>Uw gegevens blijven gescheiden.</b><br>Uw klantgegevens gaan naar uw ingestelde klant-API. Uw Nextcloud-account wordt afzonderlijk aangemaakt.</p></div>
+              <div class="form-actions actions-right"><button class="btn btn-primary" type="button" data-next>Verder naar account <span>→</span></button></div>
+            </section>
+
+            <section class="form-panel" data-panel="2" aria-labelledby="account-heading">
+              <h3 id="account-heading">Stel uw account in</h3><p class="panel-intro">Deze gegevens worden gebruikt om uw Nextcloud-account aan te maken.</p>
+              <div class="field"><label for="email">Zakelijk e-mailadres <em>*</em></label><input id="email" name="email" type="email" autocomplete="email" required maxlength="254" placeholder="naam@bedrijf.nl"><small>We gebruiken dit adres voor uw account en belangrijke berichten.</small></div>
+              <div class="field"><label for="password">Wachtwoord <em>*</em></label><input id="password" name="password" type="password" autocomplete="new-password" required minlength="12" maxlength="256" placeholder="Minimaal 12 tekens"><small>Gebruik bij voorkeur een uniek wachtwoord.</small></div>
+              <div class="field"><label for="passwordConfirm">Herhaal wachtwoord <em>*</em></label><input id="passwordConfirm" name="passwordConfirm" type="password" autocomplete="new-password" required minlength="12" maxlength="256" placeholder="Typ uw wachtwoord opnieuw"></div>
+              <label class="consent"><input id="terms" name="terms" type="checkbox" required><span>Ik heb de <a href="/voorwaarden.html" target="_blank" rel="noopener">algemene voorwaarden</a> en <a href="/privacy.html" target="_blank" rel="noopener">privacyverklaring</a> gelezen. <em>*</em></span></label>
+              <div class="privacy-callout"><span>♧</span><p><b>Veilige verwerking</b><br>Uw wachtwoord wordt alleen gebruikt voor het aanmaken van uw Nextcloud-account. Deze applicatie bewaart het niet in de klantdatabase.</p></div>
+              <div class="form-actions"><button class="btn btn-quiet" type="button" data-back>← Terug</button><button class="btn btn-primary" id="submit-button" type="submit">Account aanmaken <span>→</span></button></div>
+            </section>
+            <section class="form-panel result-panel" data-panel="3" aria-live="polite">
+              <div class="result-icon" id="result-icon">✓</div><p class="kicker" id="result-kicker">AANVRAAG ONTVANGEN</p><h3 id="result-title">Uw account wordt aangemaakt</h3><p class="result-copy" id="result-copy">We verwerken uw registratie.</p><div class="account-reference" id="account-reference" hidden></div><a class="btn btn-primary result-button" href="/" id="restart-button">Terug naar startpagina</a>
+            </section>
+            <p class="form-error" id="form-error" role="alert" hidden></p>
+          </form>
+          <p class="card-footnote"><span>♧</span> Beveiligde verbinding · Uw gegevens worden zorgvuldig verwerkt</p>
+        </section>
+      </div>
+    </section>
+
+    <section class="benefits wrap" aria-label="Voordelen">
+      <article class="benefit-card"><div class="benefit-icon">▧</div><h3>Alles op één plek</h3><p>Bestanden, agenda's en samenwerking in uw eigen digitale omgeving.</p></article>
+      <article class="benefit-card"><div class="benefit-icon">↗</div><h3>Snel aan de slag</h3><p>Uw gebruikersaccount wordt na registratie automatisch aangemaakt.</p></article>
+      <article class="benefit-card"><div class="benefit-icon">♧</div><h3>Privacy voorop</h3><p>Klantregistratie en Nextcloud-authenticatie worden afzonderlijk verwerkt.</p></article>
+    </section>
+  </main>
+  <footer class="footer wrap"><a class="footer-brand" href="#top">Nextcloud Werkplek</a><span>© <span id="year"></span> Nextcloud Werkplek</span><div><a href="/privacy.html">Privacy</a><a href="/voorwaarden.html">Voorwaarden</a><a href="mailto:support@example.nl">Contact</a></div></footer>
+</body>
+</html>
