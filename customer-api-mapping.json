@@ -1,0 +1,12 @@
+{
+  "first_name": "customer.firstName",
+  "last_name": "customer.lastName",
+  "company_name": "customer.company",
+  "postal_code": "customer.postalCode",
+  "house_number": "customer.houseNumber",
+  "street_and_city": "customer.address",
+  "phone": "customer.phone",
+  "email": "account.email",
+  "nextcloud_user_id": "provisioning.username",
+  "source": "metadata.source"
+}
